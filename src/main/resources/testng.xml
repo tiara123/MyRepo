@@ -10,6 +10,7 @@
 	<test name="HubSpot CRM App Test Cases">
 		<classes>
 			<class name="com.crm.qa.testcases.LoginPageTest"></class>
+			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
 		</classes>
 	</test>
 </suite>

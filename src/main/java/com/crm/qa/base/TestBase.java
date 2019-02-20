@@ -51,7 +51,7 @@ public class TestBase {
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
-		driver = e_driver;
+		driver = e_driver;  
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
