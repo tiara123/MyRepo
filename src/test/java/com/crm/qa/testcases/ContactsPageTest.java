@@ -30,15 +30,15 @@ public class ContactsPageTest extends TestBase {
 	public void setUp() throws InterruptedException {
 
 		initialization();
-		contactsPage = new ContactsPage();
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		contactsPage = new ContactsPage();
 
 	}
 	
 	@Test(priority=1)
-	public void verifyContactsPageLabel(){
-		Assert.assertTrue(contactsPage.verifyContactsLabel(), "contacts label is missing on the page");
+	public void verifyContactsPageLabelTest(){
+		Assert.assertTrue(contactsPage.verifyContactsLabel(), "Contacts label is missing on the page");
 	} 
 	
 	@DataProvider

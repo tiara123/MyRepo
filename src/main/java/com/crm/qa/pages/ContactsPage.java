@@ -3,13 +3,11 @@ package com.crm.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.TestBase;
 
 public class ContactsPage extends TestBase{
 	
-	WebDriverWait wait = new WebDriverWait(driver, 40);
 	
 	@FindBy(xpath="//h1[@class='private-header__heading']")
 	WebElement contactsLabel;
@@ -51,4 +49,5 @@ public class ContactsPage extends TestBase{
 		createBtn.click();
 		Thread.sleep(7000);
 	}
+	
 }
